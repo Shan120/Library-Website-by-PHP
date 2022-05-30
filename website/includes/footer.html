@@ -1,0 +1,31 @@
+<script>
+function showDate(){
+  var today = new Date();
+  var todayDD = today.getDate();
+  var todayMM = today.getMonth()+1;
+  var todayYYYY = today.getFullYear();
+
+  var displayDiv = document.getElementById("dateDisplay");
+
+  displayDiv.innerHTML = ""
+  + todayDD + "-"
+  + todayMM + "-"
+  + todayYYYY;
+}
+
+</script>
+
+<style>
+.footer {
+  padding: 20px; /* Some padding */
+  text-align: center; /* Center text*/
+  background: #ddd; /* Grey background */
+}
+
+</style>
+
+<div class='footer'>
+<p id='dateDisplay'></p>
+<p> 2022 by Shan120</p>
+<p>All Rights Reserved</p>
+</div>
